@@ -5,7 +5,6 @@ class Parent
 protected:
     int basedata = 12;
 };
-
 class Child1 : virtual public Parent
 {
 
