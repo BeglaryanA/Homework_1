@@ -6,12 +6,12 @@ protected:
     int basedata = 12;
 };
 
-class Child1 : public Parent
+class Child1 : virtual public Parent
 {
 
 };
 
-class Child2 : public Parent
+class Child2 : virtual public Parent
 {
 
 };
@@ -21,7 +21,7 @@ class GrandChild : public Child1, public Child2
 public:
     int getData()
     {
-        return Child1::basedata;
+        return basedata;
     }
 };
 
